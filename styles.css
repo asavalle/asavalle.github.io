@@ -1,9 +1,7 @@
 * {
     box-sizing: border-box;
-    overflow:auto;
-
+    overflow: auto;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -11,26 +9,28 @@ html {
 
 body {
     width: 100vw;
-    background-color:white;
-    margin:0;
+    background-color: white;
+    margin: 0;
 }
+
 
 /*COMMON CLASSES*/
-article{
-  margin:10%;
-}
-.background-gradient{
-  background-image: linear-gradient(#1f407e,#2e1f7e);
 
-
+article {
+    margin: 10%;
 }
 
-.title{
-  font-family: 'Lato', fantasy;
-  font-weight: 800;
-  font-size:3rem !important;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+.background-gradient {
+    background-image: linear-gradient(#1f407e, #2e1f7e);
+}
+
+.title {
+    font-family: 'Lato', fantasy;
+    font-weight: 800;
+    font-size: 3rem !important;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 5px;
 }
 
 .grid-container {
@@ -45,8 +45,8 @@ article{
     /* margin-left: 10%;
     margin-right: 10%; */
     box-shadow: 4px 4px 8px 4px black;
-
 }
+
 .grid-container-main {
     /* border: 1px solid red; */
     background-color: white;
@@ -59,9 +59,10 @@ article{
     margin-left: 10%;
     margin-right: 10%;
     box-shadow: 4px 4px 8px 4px black;
-
 }
-.Section { /*Picture*/
+
+.Section {
+    /*Picture*/
     /* border: 1px solid blue; */
     display: grid;
     /* margin: 5%; */
@@ -74,27 +75,28 @@ article{
     width: 100%;
 }
 
-.sectionHeader{
+.sectionHeader {
     color: #1f407e;
     text-align: center;
 }
 
-.fadein{
-    opacity:0;
+.fadein {
+    opacity: 0;
     animation: fadein 5s;
-    /* animation-delay: 0s; */
+    animation-delay: 0s;
     -moz-animation: fadein 5s;
     -moz-animation-delay: 0s;
     animation-fill-mode: forwards;
-
 }
 
-@keyframes fadein{
-    from{opacity: 0.0;}
-    to{opacity: 1;}
+@keyframes fadein {
+    from {
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-
-
 
 
 /* NAVIGATION */
@@ -103,7 +105,7 @@ header {
     position: relative;
     top: 0;
     width: 100vw;
-    margin:0;
+    margin: 0;
 }
 
 .navSection {
@@ -113,7 +115,6 @@ header {
     font-weight: 100;
     text-align: center;
     width: 100vw;
-   
 }
 
 .navlinks {
@@ -127,86 +128,88 @@ header {
     margin-left: 2px;
     float: left;
 }
-.logo1{
+
+.logo1 {
     max-width: 20%;
     height: auto;
 }
 
-.nav-btn{
-  border:3px solid #1f407e;
-  border-radius: 45px;
-  font-family: 'Lato',sans-serif;
-  font-weight: 600;
-  padding:10px;
-  color: #1f407e;
-  width: 175px;
-  margin:5px;
+.nav-btn {
+    display: block;
+    border: 3px solid #1f407e;
+    border-radius: 45px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    color: #1f407e;
+    max-width: 175px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-contact {
-  grid-area: contact;
-  text-decoration: none;
-  float: right;
+    grid-area: contact;
+    text-decoration: none;
 }
-
-
 
 .nav-btn:hover {
     color: white;
-      background-color: #2e1f7e;
-      border:none;
-      box-shadow: 4px 4px 8px 4px black;
+    background-color: #2e1f7e;
+    border: none;
+    box-shadow: 4px 4px 8px 4px black;
 }
 
 
 /* MAIN SECTION */
 
 main {
-  /* background-image: linear-gradient(#1f407e,#2e1f7e); */
-  display: grid;
-  height: 100%;
-  width: 100vw;
-  text-align: center;
-  margin-bottom: 5%;
+    /* background-image: linear-gradient(#1f407e,#2e1f7e); */
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
-.hero{
-  color: #1f407e;
-  height: 100%;
-  width: 100vw;
-  text-align: center;
-  margin: 0;
-  padding-top: 15px;
+.hero {
+    color: #1f407e;
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
 }
 
-.hero h2{
-  color: #2e1f7e;
-  text-shadow: 3px 3px 3px;
+.hero h2 {
+    color: #2e1f7e;
+    text-shadow: 3px 3px 3px;
 }
+
 .nav-portfolio {
     display: block;
     grid-area: portfolio;
     text-decoration: none;
-    margin:auto;
+    margin: auto;
     margin-top: 15px;
-
 }
+
+
 /* ABOUT SECTION */
 
 #mepic {
     border-radius: 50%;
     width: auto;
     height: 100%;
-    padding:15%;
+    /* padding: 15%; */
 }
-#about{
+
+#about {
     padding: 10%;
 }
 
 
 /* PROJECTS/SKILLS SECTION*/
-
-
 
 
 /*EDUCATION*/
@@ -233,43 +236,48 @@ main {
     width: auto;
     /* margin: 10%; */
 }
-.ed-card{
-  display: block;
-  height: auto;
-  width: 100%;
 
+.ed-card {
+    display: block;
+    height: auto;
+    width: 100%;
 }
+
 
 /* SKILLS */
- #skills-article{
-   /* background-image: linear-gradient(#1f407e,#2e1f7e); */
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 5%;
+
+#skills-article {
+    /* background-image: linear-gradient(#1f407e,#2e1f7e); */
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
 
-.titles{
+.titles {
     display: block;
     font-family: 'Lato', sans-serif;
     font-size: 26px;
     font-weight: 900;
-    margin-bottom:0;
+    margin-bottom: 0;
     margin-right: 10%;
     margin-left: 10%;
     height: 10%;
     text-align: center;
 }
 
-.subtext{
-  font-family: "lato",sans-serif;
-  font-size: 2rem;
-  /* font-style: normal; */
-  font-weight:100;
-  list-style: none;
+.subtext {
+    font-family: "lato", sans-serif;
+    font-size: 2rem;
+    /* font-style: normal; */
+    font-weight: 100;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.skills{
+
+.skills {
     display: grid;
     width: 100%;
     grid-template: 'html css js python java';
@@ -278,16 +286,29 @@ main {
     margin-right: 30%;   */
 }
 
-#html{grid-area: 'html';}
-#css{grid-area:'css';}
-#js{grid-area:'js';}
-#python{grid-area:'python';}
-#java{grid-area:'java';}
+#html {
+    grid-area: 'html';
+}
+
+#css {
+    grid-area: 'css';
+}
+
+#js {
+    grid-area: 'js';
+}
+
+#python {
+    grid-area: 'python';
+}
+
+#java {
+    grid-area: 'java';
+}
 
 .tech {
     display: block;
     width: auto;
-
     padding: 5px;
     font-family: 'Lato';
     font-style: italic;
@@ -306,20 +327,21 @@ main {
 
 /* CONTACT */
 
-.contact{
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 5%;
+.contact {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
-.input-group{
+
+.input-group {
     /* border: 1px solid purple; */
     display: block;
     width: 100%;
     /* margin-left: 50%;
     margin-right: 50%; */
-    padding:10%;
+    padding: 10%;
 }
 
 form {
@@ -332,6 +354,7 @@ form {
     margin: 10px;
     width: 100%;
 }
+
 
 /* SOCIAL MEDIA LINKS */
 
@@ -352,9 +375,11 @@ form {
     transform: scale(1.5, 1.5);
 }
 
+
 /* FOOTER */
+
 footer {
-    background-image: linear-gradient(#1f407e,#2e1f7e);
+    background-image: linear-gradient(#1f407e, #2e1f7e);
     padding: 5%;
     color: white;
     display: grid;
@@ -367,32 +392,30 @@ footer {
 }
 
 .logo2 {
-  display: block;
+    display: block;
     margin: 20px;
     height: 150px;
     width: 150px;
 }
 
 
-
-
 /* MEDIA QUEREY */
 
 @media only screen and (max-width: 525px) {
-   body, header{
-       display: block;
-       margin: 0;
-       width: 100%;
-   }
-   main{
-       margin: 0;
-   }
-.hero{
-  display: inline-block;
-  margin-top: 10%;
-}
-
-     .navlinks,
+    body,
+    header {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    main {
+        margin: 0;
+    }
+    .hero {
+        display: inline-block;
+        margin-top: 10%;
+    }
+    .navlinks,
     .nav-logo,
     .nav-portfolio,
     .nav-bio,
@@ -402,7 +425,6 @@ footer {
         width: 100%;
         height: auto;
     }
-
     .nav-logo {
         padding-top: 12px;
     }
@@ -410,26 +432,25 @@ footer {
         display: block;
         margin: 5%;
     }
-    .grid-container{
+    .grid-container {
         margin: 5%;
     }
-
-    .mySkills, .tech{
-      background-color:transparent;
-      box-shadow: none;
-      display: block;
-      height: auto;
-      width: auto;
-      margin: 10%;
+    .mySkills,
+    .tech {
+        background-color: transparent;
+        box-shadow: none;
+        display: block;
+        height: auto;
+        width: auto;
+        margin: 10%;
     }
-    .logos{
+    .logos {
         padding: 5%;
         height: 100px;
         width: 100px;
     }
-    .skills{
+    .skills {
         display: block;
         /* margin: 5%; */
     }
-
 }
