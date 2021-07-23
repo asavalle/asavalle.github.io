@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- <script>
+        alert("This Page is Currently still under construction!");
+    </script> -->
+
+</head>
+
+<body class="fadein">
+    <header>
+        <nav class="navSection ">
+            <h3 class="navlinks">
+                <a class="nav-logo" href="#home"><img class="logo1" src="images/SA_LOGO.svg" alt="logo"></a>
+                <!-- <a class="nav-bio nav-btn nav-hover" href="#about">Biography</a> -->
+                <a class="nav-contact nav-btn nav-hover" href="#contact">Contact Me</a>
+            </h3>
+        </nav>
+    </header>
+    <br id="home" />
+
+    <section class="hero">
+      <h1 class="title">Hi, I'm Anthony</h1>
+      <h2 class="title">Aspiring Developer | Designer</h2>
+      <h3 class="subtext">I Design and Create Solutions You Need:</h3>
+      <a class="nav-portfolio nav-btn nav-hover" href="#portfolio">Portfolio</a>
+
+    </section>
+    <br id="about" />
+
+    <main class="background-gradient">
+        <section class="grid-container-main  ">
+            <div id="pic" class="Section">
+                <img id="mepic" src="images/anthony.jpg" alt="Picture of Me">
+              </div>
+            <div id="about" class="Section  ">
+                <!-- <h2 class="sectionHeader">Hi, I'm Anthony</h2> -->
+                <p> <br/>I have a passion for coding and helping you reach your goals!</p>
+                <br />
+            </div>
+        </section>
+    </main>
+
+    <article id="portfolio-article">
+      <section id="portfolio" class="grid-container ">
+          <h2 class="sectionHeader">My Projects</h2>
+          <div id="projects" class="Section">
+              <!-- <hr style="border: 2px solid #c91d06; width:50%;" /> -->
+              <h2>Place Holder for Projects</h2>
+          </div>
+      </section>
+    </article>
+
+
+    <br />
+    <article id="skills-article" class="background-gradient">
+      <section id="skills" class="grid-container  ">
+          <h2 class="sectionHeader">Skills</h2>
+
+          <!-- <hr style="border: 2px solid #c91d06; width:50%;" /> -->
+          <div class=" skills">
+              <!-- <div class="tech"><img id="html" class="logos" src="images/HTML5.png" /></div>
+              <div class="tech"><img id="css" class="logos" src="images/CSS3.png" /></div>
+              <div class="tech"><img id="js" class="logos" src="images/js.png" /></div>
+              <div class="tech"><img id="python" class="logos" src="images/python.png" /></div>
+              <div class="tech"><img id="java" class="logos" src="images/java.png" /></div> -->
+              <p id="html" class="tech">HTML5</p>
+              <p id="css" class="tech">CSS3</p>
+              <p id="js" class="tech">JAVASCRIPT</p>
+              <p id="java" class="tech">JAVA</p>
+              <p id="python" class="tech">PYTHON</p>
+
+          </div>
+      </section>
+    </article>
+
+    <article id="education-article">
+      <section id="education" class="grid-container ">
+          <h2 class="sectionHeader">Education</h2>
+
+          <!-- <hr style="border: 2px solid #c91d06; width:50%;" /> -->
+
+          <div class="ed-card">
+              <p class="degree">B.S. Software Development</p>
+              <p class="school">Western Governors University</p>
+          </div>
+          <div class="ed-card">
+              <p class="degree">Front End Web Developer Certificate</p>
+              <p class="school">FreeCodeCamp.org</p>
+          </div>
+      </section>
+    </article>
+    <article id="contact" class="contact background-gradient">
+      <section class="grid-container ">
+          <h2 class="sectionHeader">Let's Chat</h2>
+          <!-- <hr style="border: 2px solid #c91d06; width:50%;" /> -->
+
+          <form action="">
+              <!-- TODO: create a script to email you -->
+              <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="text" name="firstname" class="form-control" placeholder="Enter First Name" required>
+                  <br />
+                  <input type="text" name="lastname" class="form-control" placeholder="Enter Last Name" required><br />
+                  <br /> What can I help you with? <br />
+                  <textarea class="form-control" name="description" cols="28" rows="8" placeholder="Describe your project here." required></textarea><br />
+                  <input type="email" class="form-control" placeholder="Enter Email Adress" required/>
+                  <br />
+                  <input type="submit" />
+              </div>
+              <h2 class="sectionHeader">Find me on Social Media</h2>
+
+              <div class="social  ">
+                  <a href="#"> <img class="social-img" src="images/facebook.png" alt="email"> </a>
+                  <a href="#"> <img class="social-img" src="images/mail.png" alt="email"> </a>
+                  <a href="#"> <img class="social-img" src="images/Linkedin.png" alt="email" pattern="^.+@.+$"> </a>
+              </div>
+          </form>
+      </section>
+    </article>
+
+
+
+    <footer class=" ">
+        <h1>Footer temporary text</h1>
+        <a href="#home"><img class="logo2" src="images/Shane_Anthony_Development.svg" alt="logo"></a>
+
+    </footer>
+
+</body>
+
+</html>
