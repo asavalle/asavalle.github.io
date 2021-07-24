@@ -204,16 +204,21 @@ main {
     /* padding: 15%; */
 }
 
-#about {
+
+/* #about {
     display: block;
     padding: 10%;
     width: 100%;
     height: auto;
-}
+} */
 
 #about-text {
     color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    padding: 10%;
+    width: 100%;
+    height: auto;
 }
 
 
