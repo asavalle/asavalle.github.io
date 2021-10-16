@@ -1,106 +1,141 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Portfolio Site</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
 </head>
 
-<body class="fadein">
+<body class="page-container">
     <header>
-        <nav class="navSection ">
-            <h3 class="navlinks">
-                <a class="nav-logo" href="#home"><img class="logo1" src="images/AA_Logo.png" alt="logo"></a>
-                <!-- <a class="nav-bio nav-btn nav-hover" href="#about">Biography</a> -->
-                <a class="nav-contact nav-btn nav-hover" href="#contact">Contact Me</a>
-            </h3>
-        </nav>
+        <div class="dropdown nav">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+            </button>
+        </div>
+
     </header>
-    <br id="home" />
+    <main id="home">
+        <aside class="side-bar">
+            <img id="personal-pic" src="images/anthony.jpg" alt="my image">
+            <ul id='nav-links'>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </aside>
+        <div class="div-container">
+            <section class="intro-text">
+                <h1>Hi! I'm Anthony.</h1>
+                <img id="_personal-pic" src="images/anthony.jpg" alt="my image">
+                <h2>I'm a Developer</h2>
+                <h3>Let's work together</h3>
+            </section>
+            <section>
+                <div class="social github ">
+                    <a href="https://github.com/asavalle" target="_blank"> <img id="github" src="images/github.png" alt="github"></a>
+                </div>
+                <div class="social linkedin">
+                    <a href="https://www.linkedin.com/in/anthony-avalle-74123aa9" target="_blank"> <img src="images/Linkedin.png" alt="linkedin"></a>
+                </div>
+            </section>
 
-    <section class="hero">
-        <h1 class="title">Welcome.</h1>
-        <img id="mepic" src="images/anthony.jpg" alt="Picture of Me">
+            <ul id="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C#/.NET</li>
+            </ul>
+        </div>
 
-
-        <h2 class="title">Developer | Designer</h2>
-        <ul class="subtext">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Java/C#/Python</li>
-        </ul>
-        <a class="nav-portfolio nav-btn nav-hover" href="#portfolio">Portfolio</a>
-
-    </section>
-    <br id="about" />
-
-    <main class="background-gradient">
-        <section>
-            <!-- <div id="pic" class="Section">
-            </div> -->
-            <div id="about-text" class="Section  ">
-                <!-- <h2 class="sectionHeader">Hi, I'm Anthony</h2> -->
-                <p> <br/>Hi there.<br/> My name is Anthony.<br/> Thanks for checking out my portfolio. I have a passion for coding! I'm currently in the process of switching careers and look forward to the exciting future of creating great applications for
-                    you.
-                </p>
-                <br />
-            </div>
-            <div id="contact" class="social">
-                <img class="social-img" src="images/github.png" alt="github">
-                <img class="social-img" src="images/mail2.png" alt="github">
-                <img class="social-img" src="images/Linkedin.png" alt="github">
-            </div>
-
-        </section>
     </main>
+    <div id="about" class="div-container">
+        <h2 class="section-title">Who is this guy?</h2>
+        <div class="about-desc">
+            <h3 class="heading">What I bring to the table...</h3>
+            <p>  
+                I've spent 16+ years in the manufacturing industry. Now I'm taking my skills to a brand new arena! Software Development.
+                <img id='bench' src="images/bench.svg" alt="workbench">
+                <br>Through my years as an Electronics Technician I've learned problem solving skills that I bring to analyze and breakdown problems YOU need solved!  <br> 
+                Through the years I've been a part cross-functional teams, solving problems, by bringing each persons skills together to find solutions. I'm a natural teacher, too. <br>
+                I have trained many and constructed process documentation to guide others on how best to achieve the desired goal. 
+                I have passion for technology and learning new things! This is a characteristic I will embrace to challenge myself to learn new skills that help me 
+                solve the unique problems you may face.
 
-    <article id="portfolio-article">
-        <section id="portfolio">
-            <h2 class="sectionHeader">My Projects</h2>
-            <div id="projects" class="Section">
-                <div id="wpf-db"><video src="#"></video></div>
-                <div id="JS-todo"></div>
-                <div id="java-conversion"></div>
-
+                <br> I love to learn and love to challenge myself. <br>
+                <br> 
+            </p>
+            <h3 class="heading">What motivates me...</h3>
+            <p>My amazing wife and 3 wonderful daughters give me the motivation I need to achieve my goals! 
+                My faith in God drives me to strive to be the best version of myself I can be, to live a life of integrity and honesty, working hard </p>
+            
             </div>
-        </section>
-    </article>
+    </div>
+    <div id="portfolio" class="flex-container">
+        <h2 class="section-title">Portfolio</h2>
 
+        <div class="flex-child">
+            <h3 class="heading">Java Unit Converter</h3>
+                <!-- <h4>Due to the Java SDK and JavaFX version used in the project being deprecated, I am sharing a link to the video demo I posted on LinkedIn since I cannot run it live at this time.</h4>  -->
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6726903981647400960" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>       
+                <p class="proj-title">About the project:</p>
+                <ul class="project-desc">
+                    <li>JavaFX application</li>
+                    <li>Using SceneBuilder to create the GUI</li>
+                    <li>FXML connects UI to logic</li>
+                </ul>
+        </div>
+        <div class="flex-child">
+            <h3 class="heading">JavaScript To-Do List</h3>
+            <video src="assets/JavaScript_TODO_APP.mp4" controls></video><br>
+            <a href="Todo.html">See LIVE DEMO here!</a>
+            <p class="proj-title">About the project:</p>
+            <ul class="project-desc">
+                <li>Html / CSS / Javascript</li>
+                <li>User enters item 'To-Do' and it is added to a running list.</li>
+                <li>User can delete or check off items that are completed.</li>
+            </ul>
+        </div>
+        <div class="flex-child">
+            <h3 class="heading">C# WPF CRUD Application</h3>
+            <video src="assets/Database_Application.mp4" controls></video>
+            <p class="proj-title">About the project:</p>
+            <ul class="project-desc">
+                <li>C#.NET WPF</li>
+                <li>Built using WPF to create the GUI</li>
+                <li>MS SQL database</li>
+                <li>User can search for a record, add and delete records</li>
+                <li>This project was a test application for implementing database connectivity with a GUI frontend</li>
+            </ul>
+        </div>
+        <div class="flex-child">
+            <h3 class="heading">Java String Reversal</h3>
 
-
-    <article id="education-article">
-        <section id="education">
-            <h2 class="sectionHeader">Education</h2>
-
-            <!-- <hr style="border: 2px solid #c91d06; width:50%;" /> -->
-
-            <div class="ed-card">
-                <p class="degree">B.S. Software Development</p>
-                <p class="school">Western Governors University</p>
-            </div>
-
-        </section>
-    </article>
-
-
-
-
-    <footer class=" ">
-        <h1>Footer temporary text</h1>
-        <a href="#home"><img class="logo2" src="images/AA_Logo.png" alt="logo"></a>
-
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6722713156210176000"  frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            <p class="proj-title">About the project:</p>
+            <ul class="project-desc">
+                <li>JavaFX application</li>
+                <li>Using SceneBuilder to create the GUI and FXML connects UI to logic</li>
+                <li>Simple string reverse application.</li>
+                <li>This was my first GUI application outside of a webpage.</li>
+            </ul>
+        </div>
+        
+    </div>
+    <footer >
+        <h4 id="copyright">copyright &copy; Anthony Avalle</h4>
     </footer>
-
 </body>
 
 </html>
