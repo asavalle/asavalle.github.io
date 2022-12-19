@@ -13,128 +13,63 @@
     <title>Document</title>
 </head>
 
-<body class="page-container">
-    <header>
-        <div class="dropdown nav">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu</button>
-            <ul class="dropdown-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-            </ul>
-            </button>
-        </div>
+<body>
 
-    </header>
-    <main id="home">
-        <aside class="side-bar">
-            <img id="personal-pic" src="images/anthony.jpg" alt="my image">
-            <ul id='nav-links'>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-            </ul>
-        </aside>
-        <div class="div-container">
-            <section class="intro-text">
-                <h1>Hi! I'm Anthony.</h1>
-                <img id="_personal-pic" src="images/anthony.jpg" alt="my image">
-                <h2>I'm a Developer</h2>
-                <h3>Let's work together</h3>
-            </section>
-            <section>
-                <div class="social github ">
-                    <a href="https://github.com/asavalle" target="_blank"> <img id="github" src="images/github.png" alt="github"></a>
-                </div>
-                <div class="social linkedin">
-                    <a href="https://www.linkedin.com/in/anthony-avalle-74123aa9" target="_blank"> <img src="images/Linkedin.png" alt="linkedin"></a>
-                </div>
-            </section>
 
-            <ul id="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>C#/.NET</li>
-            </ul>
-        </div>
+   <div class="page-container"> 
 
-    </main>
-    <div id="about" class="div-container">
-        <h2 class="section-title">Who is this guy?</h2>
-        <div class="about-desc">
-            <h3 class="heading">What I bring to the table...</h3>
-            <p>  
-                I've spent 16+ years in the manufacturing industry. Now I'm taking my skills to a brand new arena! Software Development.
-                <img id='bench' src="images/bench.svg" alt="workbench">
-                <br>Through my years as an Electronics Technician I've learned problem solving skills that I bring to analyze and breakdown problems YOU need solved!  <br> 
-                Through the years I've been a part of cross-functional teams, solving problems, by bringing each persons skills together to find solutions. I'm a natural teacher, too. <br>
-                I have trained many and constructed process documentation to guide others on how best to achieve the desired goal. 
-                I have passion for technology and learning new things! This is a characteristic I will embrace to challenge myself to learn new skills that help me 
-                solve the unique problems you may face.
-
-                <br> I love to learn and love to challenge myself. <br>
-                <br> 
-            </p>
-            <h3 class="heading">What motivates me...</h3>
-            <p>My amazing wife and 3 wonderful daughters give me the motivation I need to achieve my goals! 
-                My faith in God drives me to strive to be the best version of myself I can be, to live a life of integrity and honesty, working hard and trying to make a difference.</p>
-            
-            </div>
-    </div>
-    <div id="portfolio" class="flex-container">
-        <h2 class="section-title">Portfolio</h2>
-
-        <div class="flex-child">
-            <h3 class="heading">Java Unit Converter</h3>
-                <button type="button"> <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6726903981647400960">See It Here</button>       
-                <p class="proj-title">About the project:</p>
-                <ul class="project-desc">
-                    <li>JavaFX application</li>
-                    <li>Using SceneBuilder to create the GUI</li>
-                    <li>FXML connects UI to logic</li>
-                </ul>
-        </div>
-        <div class="flex-child">
-            <h3 class="heading">JavaScript To-Do List</h3>
-            <video src="assets/JavaScript_TODO_APP.mp4" controls></video><br>
-            <a href="Todo.html">See LIVE DEMO here!</a>
-            <p class="proj-title">About the project:</p>
-            <ul class="project-desc">
-                <li>Html / CSS / Javascript</li>
-                <li>User enters item 'To-Do' and it is added to a running list.</li>
-                <li>User can delete or check off items that are completed.</li>
-            </ul>
-        </div>
-        <div class="flex-child">
-            <h3 class="heading">C# WPF CRUD Application</h3>
-            <video src="assets/Database_Application.mp4" controls></video>
-            <p class="proj-title">About the project:</p>
-            <ul class="project-desc">
-                <li>C#.NET WPF</li>
-                <li>Built using WPF to create the GUI</li>
-                <li>MS SQL database</li>
-                <li>User can search for a record, add and delete records</li>
-                <li>This project was a test application for implementing database connectivity with a GUI frontend</li>
-            </ul>
-        </div>
-        <div class="flex-child">
-            <h3 class="heading">Java String Reversal</h3>
-
-            <button type="button"><a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6722713156210176000"> See It Here </button>
-            <p class="proj-title"> About the project:</p>
-            <ul class="project-desc">
-                <li>JavaFX application</li>
-                <li>Using SceneBuilder to create the GUI and FXML connects UI to logic</li>
-                <li>Simple string reverse application.</li>
-                <li>This was my first GUI application outside of a webpage.</li>
-            </ul>
+   <!-- Menu Icon: 
+    <a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/menu-rounded">Menu Rounded</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    -->
+   
+    <div class="side-bar">
+        <div id="myImageDiv">
+            <img id="myImage" src="/images/anthony.jpg">
         </div>
         
+        <div class="dropdown">
+            <button class="dropbtn"> <img #id="menuImg" src="/images/menu-w.png"></button>
+            <div class="dropdown-content">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Portfolio</a>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li> <a href=""> < Home >  </a></li>
+                <li> <a href=""> < About > </a> </li>
+                <li> <a href=""> < Portfolio > </a> </li>
+            </ul>
+        </div>
     </div>
-    <footer >
-        <h4 id="copyright">copyright &copy; Anthony Avalle</h4>
-    </footer>
+    <main>
+        <div id="welcomeTxt">
+            <p id="helloTxt"> .Hello  &nbsp</p>  
+
+            <p class="brackets" id="upperBrkt"> { </p>
+            <p class="fakeCode fakeAttribute" id="nameTxt"> &nbsp I'm-Anthony:  </p>
+            <p class="fakeCode" id="descTxt">&nbsp Developer ; &nbsp</p> 
+         
+            <p class="brackets" id="lwrBrkt"> } </p>
+        </div>
+        <div id="skillsTxt">
+            <p id=""> public Skills</p>  
+
+            <p class="brackets" id="upperBrkt"> (</p>
+            <p class="fakeCode fakeAttribute" id="nameTxt"> &nbsp C#, .Net, Web Dev &nbsp</p>
+         
+            <p class="brackets" id="lwrBrkt"> ) { &nbsp </p> 
+                <p class="brackets" id="lwrBrkt2"> } </p>
+
+        </div>
+        <div id="portfolio" >
+            <h1>Portfolio</h1>
+        </div>
+    </main>
+    
+</div> 
 </body>
 
 </html>
