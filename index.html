@@ -16,58 +16,78 @@
 <body>
 
 
-   <div class="page-container"> 
+    <div class="page-container" id="home">
 
-   <!-- Menu Icon: 
+        <!-- Menu Icon: 
     <a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/menu-rounded">Menu Rounded</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     -->
-   
-    <div class="side-bar">
-        <div id="myImageDiv">
-            <img id="myImage" src="/images/anthony.jpg">
-        </div>
-        
-        <div class="dropdown">
-            <button class="dropbtn"> <img #id="menuImg" src="/images/menu-w.png"></button>
-            <div class="dropdown-content">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Portfolio</a>
+
+        <div class="nav-bar">
+            <div id="myImageDiv">
+                <img id="myImage" src="/images/anthony.jpg">
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn"> <img #id="menuImg" src="/images/menu-w.png"></button>
+                <div class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                </div>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href=""> Home </a>
+                    </li>
+                    <li>
+                        <a href=""> About </a>
+                    </li>
+                    <li>
+                        <a href=""> Portfolio </a>
+                    </li>
+                </ul>
             </div>
         </div>
+        <main>
+            <div id="welcomeTxt">
+                <p><span id="helloTxt"> .Hello  &nbsp </span> <span class="brackets" id="upperBrkt"> { </span> </p>
 
-        <div class="nav">
-            <ul>
-                <li> <a href=""> < Home >  </a></li>
-                <li> <a href=""> < About > </a> </li>
-                <li> <a href=""> < Portfolio > </a> </li>
-            </ul>
-        </div>
+                <p> <span class="fakeCode fakeAttribute" id="nameTxt"> I'm-Anthony: <span class="fakeCode" id="descTxt">  &nbsp Developer ;  </span></span>
+                </p>
+                <p class="brackets" id="lwrBrkt"> } </p>
+            </div>
+            <div id="skillsTxt">
+                <p> <span class="fakeMethodModifier"> public  </span> <span class="fakeMethodName"> Skills</span> <span class="upperParens"> ( </span> <span class="fakeCode fakeAttribute" id="nameTxt"> C#, .Net, Web Dev &nbsp</span> <span class="lowerParens"> ) </span>                    <span class="brackets" id="lwrBrkt"> { </span> <span class="brackets" id="lwrBrkt2"> }</span> </p>
+            </div>
+            <div class="CTA">
+                <button id="ctaButton"><a href="#portfolio">See My Work!</a></button>
+            </div>
+        </main>
+        <section id="about">
+            <h1>About</h1>
+            <p> I'm an early career developer with a focus on C#/.Net. </p>
+            <p> I am transisitioning from a career in Manufacturing / Electronics, where my years of experience in problem solving, customer oriented service will aid me in providing unique solutions to your problems.
+            </p>
+            <script>
+                if ('serviceWorker' in navigator) {
+                    window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('./service-worker.js')
+                            .then(() => {
+                                console.log('[ Hey there! ] Service Worker Registered');
+                            });
+                    });
+                }
+            </script>
+
+
+        </section>
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+        </section>
+
     </div>
-    <main>
-        <div id="welcomeTxt">
-            <p><span id="helloTxt"> .Hello  &nbsp </span> <span class="brackets" id="upperBrkt"> { </span> </p>  
-
-            <p> <span class="fakeCode fakeAttribute" id="nameTxt"> I'm-Anthony: <span class="fakeCode" id="descTxt">  &nbsp Developer ;  </span></span> </p>
-            
-         
-            <p class="brackets" id="lwrBrkt"> } </p>
-        </div>
-        <div id="skillsTxt">
-            <p > <span class="fakeMethodModifier"> public  </span> <span class="fakeMethodName"> Skills</span> <span class="upperParens"> ( </span> <span class="fakeCode fakeAttribute" id="nameTxt"> C#, .Net, Web Dev &nbsp</span>  <span class="lowerParens"> ) </span> <span class="brackets" id="lwrBrkt"> { </span>  </p>  
-   
-            <p class="brackets" id="lwrBrkt2"> } </p>
-
-        </div>
-       <div class="CTA">
-        <button id="ctaButton"><a href="#">See My Work!</a></button>
-       </div>
-    </main>
-    <div id="portfolio" >
-        <h1>Portfolio</h1>
-    </div>
-    
-</div> 
 </body>
 
 </html>
