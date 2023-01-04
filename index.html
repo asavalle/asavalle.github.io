@@ -24,7 +24,7 @@
 
         <div class="nav-bar">
             <div id="myImageDiv">
-                <img id="myImage" src="/images/anthony.jpg">
+                <img id="myImage" src="/images/anthony.jpg" alt="my-face">
             </div>
 
             <div class="dropdown">
@@ -88,10 +88,44 @@
         </section>
         <section id="portfolio">
             <h1>Portfolio</h1>
-            <article class="project-card">
-                <p class="card-title">C# WinForms: Appointment Scheduler App</p> <img id="thumbnail-1" src="/images/Thumbnail_AptScheduler.png" alt=""></article>
-            <article class="project-card"> <img src="/images/AA_Logo.png" alt=""></article>
-            <article class="project-card"> </article>
+            <article class="project-card container">
+                <p class="card-title">C# WinForms: Appointment Scheduler App</p>
+                <a href="#"> <img class="thumbnail" src="/images/Thumbnail_AptScheduler.png" alt=""></a>
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h2>Appointment Scheduler</h2>
+                        <p> C# | WinForms | MySQL </p>
+                        <ul>
+                            <li>Utilizes a MySQL database for data storage</li>
+                            <li>Full CRUD capabilities</li>
+                            <li>Additional tools such user login, data reports and upcoming appointment alerts.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card container">
+                <p class="card-title"> Javascript To-Do App </p>
+                <a href="/Todo.html"> <img class="thumbnail" src="/images/js-todo.svg" alt=""> </a>
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h1>Test Text for how this will look.</h1>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="project-card container">
+                <p class="card-title"> Kotlin Tip-Calculator App </p>
+                <a href="#"> <img class="thumbnail" src="/images/kotlin-tipCalc.svg" alt=""> </a>
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h2>Test Text for how this will look.</h2>
+                    </div>
+                </div>
+
+            </article>
 
         </section>
 
