@@ -23,12 +23,12 @@
     -->
 
         <div class="nav-bar">
-            <div id="myImageDiv">
-                <img id="myImage" src="/images/anthony.jpg" alt="my-face">
+            <div class="myImageDiv">
+                <img class="myImage" src="/images/anthony.jpg" alt="my-face">
             </div>
 
             <div class="dropdown">
-                <button class="dropbtn"> <img #id="menuImg" src="/images/menu-w.png"></button>
+                <button class="dropbtn"> <img #id="menuImg" src="/images/menu-w.png" alt="menu"></button>
                 <div class="dropdown-content">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
@@ -59,10 +59,11 @@
                 <p class="brackets" id="lwrBrkt"> } </p>
             </div>
             <div id="skillsTxt">
-                <p> <span class="fakeMethodModifier"> public  </span> <span class="fakeMethodName"> Skills</span> <span class="upperParens"> ( </span> <span class="fakeCode fakeAttribute" id="nameTxt"> C#, .Net, Web Dev &nbsp</span> <span class="lowerParens"> ) </span>                    <span class="brackets" id="lwrBrkt"> { </span> <span class="brackets" id="lwrBrkt2"> }</span> </p>
+                <p> <span class="fakeMethodModifier"> public  </span> <span class="fakeMethodName"> Skills</span> <span class="brackets"> ( </span> <span class="fakeCode fakeAttribute" id="nameTxt"> C#, .Net, Web Dev &nbsp</span> <span class="brackets"> ) </span>                    <span class="brackets" id="lwrBrkt"> { </span> <span class="brackets" id="lwrBrkt2"> }</span> </p>
             </div>
+
             <div class="CTA">
-                <button id="ctaButton"><a href="#portfolio">See My Work!</a></button>
+                <p id="ctaButton"><a href="#portfolio">See My Work!</a></p>
             </div>
         </main>
         <section id="about">
@@ -72,8 +73,31 @@
                 <p> I am transisitioning from a career in Manufacturing / Electronics, where my years of experience in problem solving, customer oriented service will aid me in providing unique solutions to your problems.
                 </p>
             </div>
+            <h2 class="sect-title">Education</h2>
+            <div>
+                <div class="education-work">
+                    <p class="EW-title"> B.S. Software Development:</p>
+                    <p class="years"> Present - Oct '23</p>
+                </div>
+                <div class="education-work">
+                    <p class="EW-title"> A.S. Engineering Technology:</p>
+                    <p class="years"> 2013</p>
+                </div>
+            </div>
 
-            <script>
+            <h2 class="sect-title">Work History</h2>
+            <div>
+                <div class="education-work">
+                    <p class="EW-title"> Electronics Technician:</p>
+                    <p class="years"> Jun 2016 - Present</p>
+                </div>
+                <div class="education-work">
+                    <p class="EW-title"> Test Engineering Technician:</p>
+                    <p class="years"> 2014 - 2016</p>
+                </div>
+            </div>
+
+            <!-- <script>
                 if ('serviceWorker' in navigator) {
                     window.addEventListener('load', () => {
                         navigator.serviceWorker.register('./service-worker.js')
@@ -82,7 +106,7 @@
                             });
                     });
                 }
-            </script>
+            </script> -->
 
 
         </section>
@@ -101,16 +125,25 @@
                             <li>Additional tools such user login, data reports and upcoming appointment alerts.</li>
 
                         </ul>
+                        <a href="https://www.linkedin.com/posts/anthony-avalle-74123aa9_current-status-of-my-software-2-project-activity-7006001636443594752-EO5s?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer noopener">Check out this Video Demo on LinkedIn!</a>
                     </div>
                 </div>
             </article>
 
             <article class="project-card container">
                 <p class="card-title"> Javascript To-Do App </p>
-                <a href="/Todo.html"> <img class="thumbnail" src="/images/js-todo.svg" alt=""> </a>
+                <img class="thumbnail" src="/images/js-todo.svg" alt="">
                 <div class="overlay">
                     <div class="overlay-text">
-                        <h1>Test Text for how this will look.</h1>
+                        <h2>To-Do List Web Application</h2>
+                        <p> Javascript </p>
+                        <ul>
+                            <li>Add new task to a list</li>
+                            <li>Check off completed tasks</li>
+                            <li>Remove tasks</li>
+                            <li>Future: Incorporate persistant data with database for saving lists</li>
+                        </ul>
+                        <a href="/Todo.html" target="_blank" rel="noreferrer noopener"> Click here for LIVE Demo!</a>
                     </div>
                 </div>
 

@@ -7,6 +7,7 @@
 :root {
     --sectionP: rgb(188, 200, 211);
     --accentPurple: rgb(138, 43, 226);
+    --gradAccentPurple: rgb(112, 43, 201);
     --textWhite: rgb(188, 200, 211);
     --darkBlueAccent: rgb(3, 7, 41);
     --mainBlue: rgb(3, 8, 53);
@@ -194,6 +195,7 @@ main h1{
         flex-direction: column;
         width: 100vw;
         height: auto;
+        background-image: linear-gradient( var(--mainBlue), var(--darkBlueAccent));
     }
     /* Nav Section */
     .nav-bar {
@@ -204,6 +206,9 @@ main h1{
         top: 0;
     }
     .nav {
+        display: none;
+    }
+    .myImageDiv {
         display: none;
     }
     .dropdown {
@@ -246,6 +251,7 @@ main h1{
     }
     .dropdown-content a:hover {
         background-color: var(--accentPurple);
+        border-radius: 15px;
     }
     .nav li {
         display: none;
@@ -254,7 +260,8 @@ main h1{
         display: flex;
         flex-direction: column;
         min-width: 100vw;
-        background-color: var(--mainBlue);
+        /* background-color: var(--mainBlue); */
+        /* background-image: linear-gradient( var(--mainBlue), var(--darkBlueAccent)); */
     }
     main p {
         font-size: 3rem;
@@ -280,11 +287,12 @@ main h1{
     #ctaButton a:hover {
         text-decoration: none;
         color: var(--textWhite);
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-family: Lato;
     }
     #ctaButton:hover {
-        background-color: var(--accentPurple);
+        /* background-color: var(--accentPurple); */
+        background-image: linear-gradient( var(--darkBlueAccent), var(--mainBlue));
         font-weight: bolder;
         text-decoration: none;
         border: 3px solid var(--textWhite);
@@ -292,6 +300,7 @@ main h1{
         padding-right: 4rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
+        font-size: 2.5rem;
     }
     #welcomeTxt {
         display: flex;
@@ -333,18 +342,12 @@ main h1{
     #lwrBrkt2 {
         float: none;
     }
-    #myImageDiv {
-        display: none;
-    }
-    #myImage {
-        display: none;
-    }
     section {
         display: flex;
         flex-direction: column;
         height: 100vh;
         width: 100vw;
-        background-color: rgb(3, 8, 53);
+        /* background-color: rgb(3, 8, 53); */
         justify-content: center;
         align-content: center;
     }
@@ -366,6 +369,23 @@ main h1{
         align-items: center;
         align-content: center;
         justify-content: center;
+    }
+    .education-work {
+        display: flex;
+        position: relative;
+        width: 100vw;
+        height: auto;
+        top: 5%;
+    }
+    .sect-title {
+        color: var(--gradAccentPurple);
+        align-content: left;
+    }
+    .EW-title {
+        text-align: left;
+    }
+    .years {
+        text-align: right;
     }
     /* Portfolio Section */
     #portfolio {
