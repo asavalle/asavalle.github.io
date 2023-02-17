@@ -13,128 +13,168 @@
     <title>Document</title>
 </head>
 
-<body class="page-container">
-    <header>
-        <div class="dropdown nav">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu</button>
-            <ul class="dropdown-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-            </ul>
-            </button>
-        </div>
+<body>
 
-    </header>
-    <main id="home">
-        <aside class="side-bar">
-            <img id="personal-pic" src="images/anthony.jpg" alt="my image">
-            <ul id='nav-links'>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-            </ul>
-        </aside>
-        <div class="div-container">
-            <section class="intro-text">
-                <h1>Hi! I'm Anthony.</h1>
-                <img id="_personal-pic" src="images/anthony.jpg" alt="my image">
-                <h2>I'm a Developer</h2>
-                <h3>Let's work together</h3>
-            </section>
-            <section>
-                <div class="social github ">
-                    <a href="https://github.com/asavalle" target="_blank"> <img id="github" src="images/github.png" alt="github"></a>
+
+    <div class="page-container" id="home">
+
+        <!-- Menu Icon: 
+    <a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/menu-rounded">Menu Rounded</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    -->
+
+        <div class="nav-bar">
+
+
+            <div class="dropdown">
+                <button class="dropbtn"> <img #id="menuImg" src="/images/menu-w.png" alt="menu"></button>
+                <div class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contactMe">Contact Me</a>
+
                 </div>
-                <div class="social linkedin">
-                    <a href="https://www.linkedin.com/in/anthony-avalle-74123aa9" target="_blank"> <img src="images/Linkedin.png" alt="linkedin"></a>
-                </div>
-            </section>
-
-            <ul id="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>C#/.NET</li>
-            </ul>
-        </div>
-
-    </main>
-    <div id="about" class="div-container">
-        <h2 class="section-title">Who is this guy?</h2>
-        <div class="about-desc">
-            <h3 class="heading">What I bring to the table...</h3>
-            <p>  
-                I've spent 16+ years in the manufacturing industry. Now I'm taking my skills to a brand new arena! Software Development.
-                <img id='bench' src="images/bench.svg" alt="workbench">
-                <br>Through my years as an Electronics Technician I've learned problem solving skills that I bring to analyze and breakdown problems YOU need solved!  <br> 
-                Through the years I've been a part of cross-functional teams, solving problems, by bringing each persons skills together to find solutions. I'm a natural teacher, too. <br>
-                I have trained many and constructed process documentation to guide others on how best to achieve the desired goal. 
-                I have passion for technology and learning new things! This is a characteristic I will embrace to challenge myself to learn new skills that help me 
-                solve the unique problems you may face.
-
-                <br> I love to learn and love to challenge myself. <br>
-                <br> 
-            </p>
-            <h3 class="heading">What motivates me...</h3>
-            <p>My amazing wife and 3 wonderful daughters give me the motivation I need to achieve my goals! 
-                My faith in God drives me to strive to be the best version of myself I can be, to live a life of integrity and honesty, working hard and trying to make a difference.</p>
-            
             </div>
-    </div>
-    <div id="portfolio" class="flex-container">
-        <h2 class="section-title">Portfolio</h2>
 
-        <div class="flex-child">
-            <h3 class="heading">Java Unit Converter</h3>
-                <button type="button"> <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6726903981647400960">See It Here</button>       
-                <p class="proj-title">About the project:</p>
-                <ul class="project-desc">
-                    <li>JavaFX application</li>
-                    <li>Using SceneBuilder to create the GUI</li>
-                    <li>FXML connects UI to logic</li>
+            <!-- <div class="nav">
+                <ul>
+                    <li>
+                        <a href=""> Home </a>
+                    </li>
+                    <li>
+                        <a href=""> About </a>
+                    </li>
+                    <li>
+                        <a href=""> Portfolio </a>
+                    </li>
+                    <li>
+                        <a href=""> Contact Me </a>
+                    </li>
                 </ul>
+            </div> -->
         </div>
-        <div class="flex-child">
-            <h3 class="heading">JavaScript To-Do List</h3>
-            <video src="assets/JavaScript_TODO_APP.mp4" controls></video><br>
-            <a href="Todo.html">See LIVE DEMO here!</a>
-            <p class="proj-title">About the project:</p>
-            <ul class="project-desc">
-                <li>Html / CSS / Javascript</li>
-                <li>User enters item 'To-Do' and it is added to a running list.</li>
-                <li>User can delete or check off items that are completed.</li>
-            </ul>
-        </div>
-        <div class="flex-child">
-            <h3 class="heading">C# WPF CRUD Application</h3>
-            <video src="assets/Database_Application.mp4" controls></video>
-            <p class="proj-title">About the project:</p>
-            <ul class="project-desc">
-                <li>C#.NET WPF</li>
-                <li>Built using WPF to create the GUI</li>
-                <li>MS SQL database</li>
-                <li>User can search for a record, add and delete records</li>
-                <li>This project was a test application for implementing database connectivity with a GUI frontend</li>
-            </ul>
-        </div>
-        <div class="flex-child">
-            <h3 class="heading">Java String Reversal</h3>
+        <main>
+            <div id="welcomeTxt">
+                <p><span id="helloTxt"> .Hello  &nbsp </span> <span class="brackets" id="upperBrkt"> { </span> </p>
 
-            <button type="button"><a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6722713156210176000"> See It Here </button>
-            <p class="proj-title"> About the project:</p>
-            <ul class="project-desc">
-                <li>JavaFX application</li>
-                <li>Using SceneBuilder to create the GUI and FXML connects UI to logic</li>
-                <li>Simple string reverse application.</li>
-                <li>This was my first GUI application outside of a webpage.</li>
-            </ul>
-        </div>
-        
+                <p> <span class="fakeCode fakeAttribute" id="nameTxt"> I'm-Anthony: <span class="fakeCode" id="descTxt">  &nbsp Developer ;  </span></span>
+                </p>
+                <p class="brackets" id="lwrBrkt"> } </p>
+            </div>
+            <div id="skillsTxt">
+                <p> <span class="fakeMethodModifier"> public  </span> <span class="fakeMethodName"> Skills</span> <span class="brackets"> ( </span> <span class="fakeCode fakeAttribute" id="nameTxt"> C#, .Net, Web Dev </span> <span class="brackets"> ) </span>
+                    <span class="brackets" id="lwrBrkt"> { </span> <span class="brackets" id="lwrBrkt2"> }</span> </p>
+            </div>
+
+            <div class="CTA">
+                <p id="ctaButton"><a href="#portfolio">See My Work!</a></p>
+            </div>
+        </main>
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="desc-text">
+                <p> I'm an early career developer with a focus on C#/.Net. </p>
+                <p> I am transisitioning from a career in Manufacturing / Electronics, where my years of experience in problem solving, customer oriented service and overall technical understanding will aid me in providing unique solutions to your problems.
+                </p>
+            </div>
+            <h2 class="sect-title">Education</h2>
+            <div>
+                <div class="education-work">
+                    <p class="EW-title"> B.S. Software Development:</p>
+                    <p class="years"> Present - Oct '23</p>
+                </div>
+                <div class="education-work">
+                    <p class="EW-title"> A.S. Engineering Technology:</p>
+                    <p class="years"> Grad 2013</p>
+                </div>
+            </div>
+
+            <h2 class="sect-title">Work History</h2>
+            <div>
+                <div class="education-work">
+                    <p class="EW-title"> Electronics Technician:</p>
+                    <p class="years"> Jun 2016 - Present</p>
+                </div>
+                <div class="education-work">
+                    <p class="EW-title"> Test Engineering Technician:</p>
+                    <p class="years"> 2014 - 2016</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <article class="project-card container">
+                <p class="card-title">C# WinForms: Appointment Scheduler App</p>
+                <a href="#"> <img class="thumbnail" src="/images/Thumbnail_AptScheduler.png" alt=""></a>
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h2>Appointment Scheduler</h2>
+                        <p> C# | WinForms | MySQL </p>
+                        <ul>
+                            <li>Utilizes a MySQL database for data storage</li>
+                            <li>Full CRUD capabilities</li>
+                            <li>Additional tools such user login, data reports and upcoming appointment alerts.</li>
+
+                        </ul>
+                        <a href="https://www.linkedin.com/posts/anthony-avalle-74123aa9_current-status-of-my-software-2-project-activity-7006001636443594752-EO5s?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer noopener">
+                            Video Demo!
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card container">
+                <p class="card-title"> Javascript To-Do App </p>
+                <img class="thumbnail" src="/images/js-todo.svg" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h2>To-Do List Web Application</h2>
+                        <p> Javascript </p>
+                        <ul>
+                            <li>Add new task to a list</li>
+                            <li>Check off completed tasks</li>
+                            <li>Remove tasks</li>
+                            <li>Future: Incorporate persistant data with database for saving lists</li>
+                        </ul>
+                        <a href="/Todo.html" target="_blank" rel="noreferrer noopener"> LIVE Demo!</a>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="project-card container">
+                <p class="card-title"> Kotlin Tip-Calculator App </p>
+                <a href="#"> <img class="thumbnail" src="/images/kotlin-tipCalc.svg" alt=""> </a>
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h2>Kotlin Tip Calculator Mobile App</h2>
+                        <p> Kotlin </p>
+                        <ul>
+                            <li>Simple app calculates the tip percentage.</li>
+                            <li>Enter Bill total</li>
+                            <li>Select desired tip percentage</li>
+                        </ul>
+                        <a href="https://www.linkedin.com/posts/anthony-avalle-74123aa9_i-have-officially-built-my-first-android-activity-6910671008874045440-KEM1?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noreferrer noopener">
+                            Video Demo!
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+
     </div>
-    <footer >
-        <h4 id="copyright">copyright &copy; Anthony Avalle</h4>
-    </footer>
+    <section id="contactMe" class="contact-section">
+        <div id="contact-title-div">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="social-pngs">
+            <a href="https://www.linkedin.com/in/anthony-avalle-74123aa9/" target="_blank" rel="noreferrer noopener"> <img src="/images/Linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.github.com/asavalle" target="_blank" rel="noreferrer noopener"> <img src="/images/github.png" alt="GitHub"></a>
+        </div>
+    </section>
 </body>
 
 </html>
